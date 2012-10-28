@@ -1,0 +1,11 @@
+<?php
+$this->load->view('templates/public_header.php');
+?>
+<body>
+<?php 
+$this->load->view($view);
+?>
+</body>
+<?php 
+$this->load->view('templates/public_footer.php');
+?>
