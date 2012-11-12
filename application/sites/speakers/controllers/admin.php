@@ -13,13 +13,29 @@ class Admin extends MX_Controller {
 
 		//$this->load->library('entities\Test');
 
-		Modules::library('entities/Test');
 
-		$test = new sbex\entities\Test();
-		echo $test->getTest();
 		
-		echo __FILE__;
+		//Modules::library('entities/Test');
+	
+		//$test = new Test();
+		//echo $test->getTest();
+		
+		//$os = new OIRAPSurvey();
+	//	$os->setIId(100);
+		//$os->insert();
 
+
+		//$os = OIRAPSurvey::load(100);
+		//print_r($os->getData());
+		
+		//$os = OIRAPSpeakers::load(100);
+		//print_r($os->getData());
+		
+	//	$os = new OIRAPExpert();
+		//	$os->setIId(100);
+		//$os->insert();
+		$os = OIRAPExpert::load(100);
+		print_r($os->getData());
 	}
 
 	public function test() { echo 'test'; }

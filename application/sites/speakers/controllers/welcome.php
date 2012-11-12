@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
-
+	
 	/**
 	 * Index Page for this controller.
 	 *
@@ -18,8 +18,18 @@ class Welcome extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-		$data['view'] = "main.php";
-		$this->load->view('layouts/mainlayout.php', $data);
+		$layout = array (
+			'title' => 'Rutgers Speakers Bureau',
+			'header_tpl' => 'templates/page_header',
+			'primary_tpl' => 'templates/quick_links',
+			'content_tpl' => 'main',
+			'secondary_tpl' => 'templates/featured_speaker',
+			'footer_tpl' => 'templates/page_footer',
+			'js' => '',
+			'css' => ''
+		);
+
+		$this->load->view('layouts/three_column_layout', $layout);
 	}
 }
 

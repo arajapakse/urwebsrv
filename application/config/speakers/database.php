@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['sbex']['hostname'] = 'localhost';
-$db['sbex']['username'] = 'root';
-$db['sbex']['password'] = 'ur3710adm';
+$db['sbex']['username'] = 'sbex';
+$db['sbex']['password'] = 'ur4321';
 $db['sbex']['database'] = 'sbexprod2';
 $db['sbex']['dbdriver'] = 'mysql';
 $db['sbex']['dbprefix'] = '';

@@ -1,15 +1,17 @@
 <?php
 class Build extends MX_Controller {
-
+	private $oirapReader;
+	
 	public function __construct() {
 		parent::__construct();
-		$this->load->database();
+		$this->sbexDb = $this->load->database("sbex",TRUE);
 	}
 
 
 	private $tables = array(
-			'a_person' => 'Person'
-
+			//'OIRAPSurveys' => 'OIRAPSurvey',
+			'OIRAPSpeakers' => 'OIRAPSpeaker',
+			//'OIRAPExperts' => 'OIRAPExpert'
 	);
 
 
@@ -22,8 +24,8 @@ class Build extends MX_Controller {
 
 		foreach ($this->tables as $table=>$className) {
 			$sql = "describe " . $table;
-			$query = $this->db->query($sql);
-
+			$query = $this->sbexDb->query($sql);
+// 
 			echo '<pre>';
 			echo 'class ' . $className . " extends Entity {\n";
 			if ($query->num_rows() > 0) {

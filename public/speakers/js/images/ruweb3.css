@@ -1,0 +1,609 @@
+@media screen {
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color:#FFFFFF;
+}
+
+
+
+/*/*/a{}
+body,
+body td,
+body th,
+body p {
+  font-size: x-small;
+  voice-family: "\"}\"";
+  voice-family: inherit;
+  font-size: small;
+}
+html>body,
+html>body td,
+html>body th
+html>body p {
+  font-size: small;
+}  
+/* */
+
+ul.linklist {
+	visibility: visible;
+	list-style-type: none;
+	padding: 0px;
+	margin-left: 1em;
+	margin-top:3px;	
+}
+
+li.linkitem {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: 1.2em;  /* left text padding */
+	background: url('images/bullet_orange.gif');
+	background-repeat: no-repeat;
+}
+
+
+li.linkitemb {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: 1.2em;  /* left text padding */
+	background: url('images/bullet_blue.gif');
+	background-repeat: no-repeat;
+}
+
+li.linkitemg {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: 1.2em;  /* left text padding */
+	background: url('images/bullet_green.gif');
+	background-repeat: no-repeat;
+}
+
+li.linkitemk {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: 1.2em;  /* left text padding */
+	background: url('images/bullet_black.gif');
+	background-repeat: no-repeat;
+}
+
+li.linkitemr {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: 1.2em;  /* left text padding */
+	background: url('images/bullet_red.gif');
+	background-repeat: no-repeat;
+}
+
+ul.linklistnav {
+	visibility: visible;
+	list-style-type: none;
+	padding: 0px;
+	margin-top:3px;
+	margin-left: 0px;
+}
+
+li.linkitemnav {
+	visibility: visible;
+	background-position: left top; /* horizontal alignment*/
+	padding-bottom: 2px;
+	padding-left: .7em;  /* left text padding */
+	background: url('images/caret.gif');
+	background-repeat: no-repeat;
+	margin-left: 0px;
+}
+
+.maintitle {
+	position: absolute;
+	visibility: visible;
+	width: 544px;
+	height: 39px;
+	left: 45px;
+	top: 75px;
+}
+
+.d_subnav {
+	position: absolute;
+	visibility: visible;
+	width: 705px;
+	height: 25px;
+	font-size: 8pt;
+	left: 66px;
+	top: 80px;
+}
+
+.ruwebtitle {
+	position: absolute;
+	visibility: visible;
+	background: #ffffff;
+	width: 521px;
+	height: 39px;
+	left: 64px;
+	top: 77px;
+	z-index: 0;
+}
+
+.pagetitle {
+	position: relative;
+	visibility: visible;
+
+}
+
+.pagetitle_d {
+	position: absolute;
+	visibility:hidden;
+	width: 544px;
+	height: 52px;
+	left: 50px;
+	top: 80px;
+}
+
+.container {
+	position: absolute;
+	visibility: visible;
+	width: 368px;
+	left: 232px;
+	top: 130px;
+}
+
+.container2 {
+	position: absolute;
+	visibility: visible;
+	width: 535px;
+	left: 70px;
+	top: 116px;
+}
+
+.container_d {
+	position: absolute;
+	visibility: visible;
+	width: 705px;
+	left: 66px;
+	top: 116px;
+}
+
+.content {
+	position: relative;
+	visibility: visible;
+}
+
+.content2 {
+	position: relative;
+	visibility: visible;
+	left: 23px;
+}
+
+.content_d {
+	position: absolute;
+	visibility: visible;
+	width: 686px;
+	left: 51px;
+	top: 90px;
+}
+
+
+.footer {
+	position: relative;
+	visibility: visible;
+	font-size: 8pt;
+}
+
+.footer2 {
+	position: relative;
+	visibility: visible;
+	font-size: 8pt;
+	left: 23px;
+	width: 540px;
+}
+
+.mainnav {
+	position: absolute;
+	visibility: visible;
+	width: 132px;
+	left: 616px;
+	top: 90px;
+	background-color:#FAFBE6;
+	border: 1px solid #666666;
+	padding: 5px;
+}
+
+.campuslinks {
+	position: absolute;
+	visibility: visible;
+	height: 16px;
+	width: 616px;
+	left: 0px;
+	top: 90px;
+}
+
+.gutter {
+	position: absolute;
+	visibility: visible;
+	width: 137px;
+	left: 67px;
+	top: 130px;
+}
+
+.photo {
+	position: relative;
+	visibility: visible;
+}
+
+.photofloatr {
+	position: relative;
+	visibility: visible;
+	float:right;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.photofloatl {
+	position: relative;
+	visibility: visible;
+	float:left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+.leftblock {
+	position: absolute;
+	visibility: hidden;
+	height: 96px;
+	width: 72px;
+	left: 0px;
+	top: 106px;
+	background-image:url('images/left.gif');
+	background-repeat:no-repeat;
+}
+
+.rightblock {
+	position: absolute;
+	visibility: hidden;
+	height: 55px;
+	width: 10px;
+	left: 760px;
+	top: 55px;
+	background-image:url('images/right.gif');
+	background-repeat:no-repeat;
+}
+
+.left_d {
+	position: absolute;
+	visibility: visible;
+	left: 0px;
+	top: 63px;
+	width: 50px;
+	height: 16px;
+	background-image:url('images/left_d.gif');
+	background-repeat:no-repeat;
+}
+
+/* table classes */
+
+.box {
+border: #336666 solid 2px;
+}
+
+.boxtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #336666;
+	padding: 5px;
+}
+
+.boxtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	background-color: #FAFBE6;
+	padding: 5px;
+	
+}
+
+/* d level pages */
+
+.greybox_d {
+	position: absolute;
+	visibility: visible;
+	left: 50px;
+	top: 63px;
+	width: 545px;
+	height: 16px;
+	background-color:#666666;
+	color: #ffcc33;
+}
+
+/* Link Style */
+/*
+a.header:link, a.header:hover, a.header:active, a.header:visited {
+	background-image:url('css/images/new_header.gif');
+	background-repeat:no-repeat;
+	position: absolute;
+	visibility: visible;
+	height: 76px;
+	width: 770px;
+	left: 0px;
+	top: 0px;
+	display:block;
+}*/
+
+a.header_d  {
+	position: absolute;
+	visibility: visible;
+	height: 63px;
+	width: 451px;
+	left: 0px;
+	top: 0px;
+	background-image:url('images/header_d.gif');
+	background-repeat:no-repeat;
+	display:block;
+}
+
+/*a.search:link, a.search:hover, a.search:active, a.search:visited {
+	position: absolute;
+	visibility: visible;
+	height: 34px;
+	width: 152px;
+	left: 616px;
+	top: 8px;
+	background-image:url('images/search_rutgers.gif');
+	background-repeat:no-repeat;
+	display:block;
+}*/
+
+a.search_d:link, a.search_d:hover, a.search_d:active, a.search_d:visited {
+	position: absolute;
+	visibility: visible;
+	height: 63px;
+	width: 144px;
+	left: 451px;
+	top: 0px;
+	background-image:url('images/search_d.gif');
+	background-repeat:no-repeat;
+	display:block;
+}
+
+
+a.ruhome:link, a.ruhome:hover, a.ruhome:active, a.ruhome:visited  {
+	position: relative;
+	visibility: visible;
+	width: 122px;
+	height: 28px;
+	left: 9px;
+	background-image:url('images/new_ruhome.gif');
+	background-repeat:no-repeat;
+	display:block;
+}
+
+/* Main Nav Start */
+
+a.logout:link, a.logout:visited,; background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.about:link, a.about:visited, a.about:active{background:url(images/nav/about_the_university.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.about:hover{background:url(images/nav/about_the_university2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.academics:link, a.academics:visited, a.academics:active{background:url(images/nav/academics.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.academics:hover{background:url(images/nav/academics2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.admissions:link, a.admissions:visited, a.admissions:active{background:url(images/nav/admissions.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.admissions:hover{background:url(images/nav/admissions2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.alumni:link, a.alumni:visited, a.alumni:active{background:url(images/nav/alumni.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.alumni:hover{background:url(images/nav/alumni2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.athletics:link, a.athletics:visited, a.athletics:active{background:url(images/nav/athletics.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.athletics:hover{background:url(images/nav/athletics2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.events:link, a.events:visited, a.events:active{background:url(images/nav/events.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.events:hover{background:url(images/nav/events2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.emp:link, a.emp:visited, a.emp:active{background:url(images/nav/emp_nav.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.emp:hover{background:url(images/nav/emp_nav2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.fs:link, a.fs:visited, a.fs:active{background:url(images/nav/fs_nav.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.fs:hover{background:url(images/nav/fs_nav2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.lib:link, a.lib:visited, a.lib:active{background:url(images/nav/lib_nav.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.lib:hover{background:url(images/nav/lib_nav2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.news:link, a.news:visited, a.news:active{background:url(images/nav/news_media.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.news:hover{background:url(images/nav/news_media2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.research:link, a.research:visited, a.research:active{background:url(images/nav/research.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.research:hover{background:url(images/nav/research2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.serving:link, a.serving:visited, a.serving:active{background:url(images/nav/serving_new_jersey.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.serving:hover{background:url(images/nav/serving_new_jersey2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.stu:link, a.stu:visited, a.stu:active{background:url(images/nav/stu_nav.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.stu:hover{background:url(images/nav/stu_nav2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.support:link, a.support:visited, a.support:active{background:url(images/nav/supporting_rutgers.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.support:hover{background:url(images/nav/supporting_rutgers2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.pres:link, a.pres:visited, a.pres:active{background:url(images/nav/university_president.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.pres:hover{background:url(images/nav/university_president2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+a.visit:link, a.visit:visited, a.visit:active{background:url(images/nav/visiting_rutgers.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+a.visit:hover{background:url(images/nav/visiting_rutgers2.gif); background-repeat:no-repeat; display:block; height:16px; width:132px;}
+
+/* Main Nav End */
+
+a.link_b:link, a.link_b:active, a.link_b:visited {color:#000000; text-decoration:none;}
+a.link_b:hover 	{color:#000000; text-decoration:underline;}
+
+
+a.nav_item_c:link, a.nav_item_c:active, a.nav_item_c:visited {color: #000000; text-decoration:none;}
+a.nav_item_c:hover {color: #c00000; text-decoration:underline;}
+
+a.nav_item_d:link, a.nav_item_d:active,a.nav_item_d:visited {color: #660033; text-decoration:none;}
+a.nav_item_d:hover {color: #660033; text-decoration:underline;}
+
+a.nav_item_g:link, a.nav_item_g:active, a.nav_item_g:visited {color: #666666; text-decoration:underline;}
+a.nav_item_g:hover {color: #c00000; text-decoration:underline;}
+
+a.nav_item_w:link, a.nav_item_w:active, a.nav_item_w:visited {font-size: 8pt; color: #ffffff; text-decoration:none;}
+a.nav_item_w:hover {font-size: 8pt; color: #ffcc33; text-decoration:none;}
+
+a.back:link, a.back:active, a.back:visited {font-size: 8pt; color: #333399; text-decoration:none;}
+a.back:hover {font-size: 8pt; color:#3333FF; text-decoration:underline;}
+
+a.featlink:link, a.featlink:active, a.featlink:visited {color:#000000; text-decoration:none;}
+a.featlink:hover {color:#336666; text-decoration:underline;}
+
+/* Footer Link Styles */
+
+a.info:link, a.info:active, a.info:visited {color: #660033; font-size: 8pt; text-decoration:none; }
+a.info:hover {color: #cc0000; font-size: 8pt; text-decoration:underline;}
+/* List Styles */
+
+/* Header Styles */
+a.header{
+background-image: url("images/new_header.jpg");
+background-repeat:no-repeat;
+display: block;
+width: 771px;
+height: 75px;
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: 1;
+}
+
+a.camden{
+background-repeat:no-repeat;
+display: block;
+width: 58px;
+height: 25px;
+position: absolute;
+left: 381px;
+top:0px;
+z-index: 2;
+border: 1px;
+}
+
+a.newark{
+background-repeat:no-repeat;
+display: block;
+width: 60px;
+height: 25px;
+position: absolute;
+left: 455px;
+top: 0px;
+z-index: 2;
+}
+
+a.newbrunswick{
+background-repeat:no-repeat;
+display: block;
+width: 109px;
+height: 25px;
+position: absolute;
+left: 527px;
+top: 0px;
+z-index: 2;
+}
+
+a.search{
+background-repeat:no-repeat;
+display: block;
+width: 110px;
+height: 25px;
+position: absolute;
+left: 650px;
+top: 0px;
+z-index: 2;
+}
+
+/* This is a DIV created for the Print stylesheet ONLY */
+.header-print {
+	background-image:url('images/header.gif');
+	background-repeat:no-repeat;
+	position: absolute;
+	visibility: visible;
+	height: 90px;
+	width: 616px;
+}
+
+}
+
+@media print {
+	body{
+	font-size: 12pt; 
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#FFFFFF;
+		}
+	
+	div.header-print { width: auto; }
+	div.maintitle { width: auto; }
+	div.ruwebtitle { width: auto; }
+	div.pagetitle { width: auto; }
+	div.pagetitle_d { width: auto; }
+	div.content { width: auto; }
+	div.content2 { width: auto; }
+	div.content_d { width: auto; }
+	div.footer { width: auto; }
+	div.footer2 { width: auto; }
+}
+
+.sectionHead {font-size: 14pt; color: #000000; text-decoration:none; font-weight:bold;}
+
+
+.sbex_main_title {
+	position: absolute;
+	visibility: visible;
+	background: #ffffff;
+	left: 25px;
+	font-size: 18px;
+	text-decoration:none;
+	font-weight:bold;
+	top: 12px;
+	z-index: 0;
+}
+
+
+
+.sbex_person_name {
+	position: inherit;
+	visibility: visible;
+	background: #ffffff;
+	left: 120px;
+	font-size: 16px;
+	text-decoration:none;
+	font-weight:bold;
+	top: 20px;
+	z-index: 0;
+}
+
+.sbex_person_name_no_image {
+	position: inherit;
+	visibility: visible;
+	background: #ffffff;
+	left: 7px;
+	font-size: 16px;
+	text-decoration:none;
+	font-weight:bold;
+	top: 20px;
+	z-index: 0;
+}
+
+#breadcrumbs {
+    font-size : 85%;
+    color : #000;
+    margin-bottom : 5px;
+}
+#breadcrumbs a {
+    color : #f00;
+}
+#breadcrumbs a:hover { 
+    color : #fff;
+    background-color : #f00;
+}
+
+.arialRed {color:#FF0000;}

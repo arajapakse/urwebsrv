@@ -1,0 +1,147 @@
+/* all table styles */
+
+TD.grey_line 	{background:#999999;}
+
+TD.beige_fieldtext 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; font-weight:normal;background:#FAFBE6;}
+
+TD.beige_field	{background:#FAFBE6;}
+
+TD.brown_field	{background:#666666;}
+
+TD.homeb 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; font-weight:bold;}
+
+TD.home 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000;}
+
+TD.homeg 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #999999;}
+
+TD.blue 	{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #3366cc;}
+
+
+
+/* all body styles */
+
+P.home 			{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000;}
+
+span.home 		{font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000;}
+
+span.smaller_text	{font-size:6pt;}
+
+/* all link style*/
+
+a.nav_item:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #660066; text-decoration:none;}
+
+a.nav_item:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #660066; text-decoration:none;}
+
+a.nav_item:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #660066; text-decoration:none;}
+
+a.nav_item:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #660066; text-decoration:none;}
+
+
+
+a.footer_nav:link {font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #660033; text-decoration:none;}
+
+a.footer_nav:active {font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #660033; text-decoration:none;}
+
+a.footer_nav:visited {font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #660033; text-decoration:none;}
+
+a.footer_nav:hover {font-family: Arial, Helvetica, sans-serif; font-size: 6pt; color: #660033; text-decoration:none;}
+
+
+
+a.nav_item_c:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.nav_item_c:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.nav_item_c:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.nav_item_c:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #c00000; text-decoration:underline;}
+
+
+
+a.info:link {font-family: Arial, Helvetica, sans-serif; color: #660033; text-decoration:none;}
+
+a.info:active {font-family: Arial, Helvetica, sans-serif; color: #660033; text-decoration:none;}
+
+a.info:visited {font-family: Arial, Helvetica, sans-serif; color: #660033; text-decoration:none;}
+
+a.info:hover {font-family: Arial, Helvetica, sans-serif; color: #c00000; text-decoration:underline;}
+
+
+
+a.news_item:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.news_item:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.news_item:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; text-decoration:none;}
+
+a.news_item:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #c00000; text-decoration:underline;}
+
+
+
+a.nav_w:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #ffffff; text-decoration:none;}
+
+a.nav_w:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #ffffff; text-decoration:none;}
+
+a.nav_w:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #ffffff; text-decoration:none;}
+
+a.nav_w:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; color: #ffffff; text-decoration:none;}
+
+
+
+a.header_nav_b:link {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #ffffff; text-decoration:none;}
+
+a.header_nav_b:active {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #ffffff; text-decoration:none;}
+
+a.header_nav_b:visited {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #ffffff; text-decoration:none;}
+
+a.header_nav_b:hover {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #ffffff; text-decoration:none;}
+
+
+
+/* 8pt List Item */
+
+.list10 {font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #003366}
+
+
+
+/* list link */
+
+A.list10:link 		{color:#003366; text-decoration:none;}
+
+A.list10:active 	{color:#003366; text-decoration:none;}
+
+A.list10:visited 	{color:#003366; text-decoration:none;}
+
+A.list10:hover 		{color:#003366; text-decoration:none;}a.news_item:active { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #000000; text-decoration:none; }
+
+
+
+A.link_b:link 	{color:#000000; text-decoration:none;}
+
+A.link_b:active 	{color:#000000; text-decoration:none;}
+
+A.link_b:visited 	{color:#000000; text-decoration:none;}
+
+A.link_b:hover 	{color:#000000; text-decoration:underline; }
+
+TD.link_b {color:#000000; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt;}
+
+TD.news_item { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #000000;}
+
+A.nav_item_w:active { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:hover { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:link { font-weight: normal; color: #ffffff; text-decoration: none }
+
+A.nav_item_w:visited { font-weight: normal; color: #ffffff; text-decoration: none }
+
+TD.nav_item_o { color:#ffcc33; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; line-spacing:14pt; }
+
+A.nav_item_k:active { font-weight: bold; color: #FAFBE6; text-decoration: none ;font-family: Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+A.nav_item_k:hover { font-weight: bold; color: #FAFBE6; text-decoration: none ;font-family: Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+A.nav_item_k:link { font-weight: bold; color: #FAFBE6; text-decoration: none ;font-family: Arial, Helvetica, sans-serif; font-size: 8pt;}
+
+A.nav_item_k:visited { font-weight: bold; color: #FAFBE6; text-decoration: none ;font-family: Arial, Helvetica, sans-serif; font-size: 8pt;}
