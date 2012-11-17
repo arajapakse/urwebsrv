@@ -11,10 +11,6 @@ abstract class Entity {
 	// Consultant Entity Fields
 	protected $data = array();
 	
-/**
- * $oirapDB = $this->load->database("oirap",TRUE);
-		$sbexDb = $this->load->database('sbex', TRUE);
- */
 	protected static $sbexDB = null;
 	protected static $oirapDB = null;
 	
@@ -75,8 +71,7 @@ abstract class Entity {
 		
 		if (!empty($tableName)) {
 			return $tableName;
-		}
-		
+		}		
 		throw Exception('Undefined Database Table Name');
 	}
 	
@@ -189,14 +184,26 @@ abstract class Entity {
 				}
 				
 				$ret = true;
+
+				//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' query: '. Entity::$sbexDB->last_query());
+				
 			}
 			else {
-				throw \APIException(\APIError::getError(\APIError::DB_INSERT_ERROR), \APIError::DB_INSERT_ERROR);
+
+				//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' Data: '. print_r($this->getData(), true));
+				
+				throw new Exception('Database Insert Failed');
 			}				
 		}
 		else {
-			throw new \APIException('Action is not permitted by this class');
+
+			//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' Data: '. print_r($this->getData(), true));
+			
+			throw new Exception('Action is not permitted by this class');
 		}
+		
+
+		//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' Data: '. print_r($this->getData(), true));
 		
 		return $ret;
 	}
@@ -235,11 +242,19 @@ abstract class Entity {
 				//$redis->set($redisKey, serialize($this->getData()), $expire_time);
 				//$this->redisCleanUp();
 				$ret = true;
+
+				//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' query: '. Entity::$sbexDB->last_query());	
 			}
 			else {
+
+				//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' Data: '. print_r($this->getData(), true));
+				
 				throw new \APIException('Update method is not permitted by this class');
 			}
 		}
+		
+		
+		//log_message('debug', __CLASS__ . '@'. __METHOD__ . ' LINE: '. __LINE__ . ' Data: '. print_r($this->getData(), true));
 		
 		return $ret;
 	}
@@ -363,6 +378,34 @@ abstract class Entity {
 		return $this->getTableName(). ':'. $keyParts;
 	}  
 	*/
+	
+	public static function getTableFilds($tableName) {
+		static $columns = array();
+		
+		if (!array_key_exists($tableName, $columns)) {
+			static $ci = null;
+			if (empty($ci)) {
+				$ci =& get_instance();
+			}
+			
+			Entity::loadDatabases( $ci );
+		
+			$sql = "describe " . $tableName;
+			$query = Entity::$sbexDB->query($sql);
+			
+			if ($query->num_rows() > 0) {
+				
+				foreach ($query->result() as $row) {	
+					$columns[$tableName][] = $row->Field;
+				}
+			}
+		}
+		
+		if (array_key_exists($tableName, $columns)) {
+			return $columns[$tableName];
+		}
+		return array();
+	}
 	
 	/**
 	 * Load an Entry

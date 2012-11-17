@@ -1,17 +1,17 @@
 <?php 
-
 class OIRAPExpert extends Entity {
 	private static $DB_TABLE_NAME = 'OIRAPExperts';
 	
 	public function __construct() {
 		$entityAttributes = new EntityAttributes(self::$DB_TABLE_NAME);
 		$entityAttributes->addKey('I_ID');
+		$entityAttributes->addKey('RESPONSE_CATEGORY_CD');
 		parent::__construct($entityAttributes);
 	}
 	
+	
 	/**
 	 * getIId()
-	 * Primary Key
 	 *
 	 * @return char(16) $I_ID
 	 */
@@ -21,7 +21,6 @@ class OIRAPExpert extends Entity {
 
 	/**
 	 * setIId($i_id)
-	 * Primary Key
 	 *
 	 * @param char(16) $I_ID
 	 */
@@ -29,12 +28,32 @@ class OIRAPExpert extends Entity {
 		$this->I_ID = $i_id;
 	}
 
+	/**
+	 * getRESPONSECATEGORYCD()
+	 *
+	 * @return tinyint(2) $RESPONSE_CATEGORY_CD
+	 */
+	public function getRESPONSECATEGORYCD() {
+		return $this->RESPONSE_CATEGORY_CD;
+	}
+
+	/**
+	 * setRESPONSECATEGORYCD($response_category_cd)
+	 *
+	 * @param tinyint(2) $RESPONSE_CATEGORY_CD
+	 */
+	public function setRESPONSECATEGORYCD($response_category_cd) {
+		$this->RESPONSE_CATEGORY_CD = $response_category_cd;
+	}
+
 	public function iidExists() {
 		$id = $this->I_ID;
-		
-		if (!empty($id) && is_numeric($id)) {
+		$cd = $this->RESPONSE_CATEGORY_CD;
+	
+		if (!empty($id) && !empty($cd)) {
 			return true;
 		}
+	
 		return false;
 	}
 	
@@ -57,21 +76,21 @@ class OIRAPExpert extends Entity {
 	}
 
 	/**
-	 * getALTOFFICEPHONEEXIT()
+	 * getALTOFFICEPHONEEXT()
 	 *
-	 * @return char(15) $ALT_OFFICE_PHONE_EXIT
+	 * @return char(15) $ALT_OFFICE_PHONE_EXT
 	 */
-	public function getALTOFFICEPHONEEXIT() {
-		return $this->ALT_OFFICE_PHONE_EXIT;
+	public function getALTOFFICEPHONEEXT() {
+		return $this->ALT_OFFICE_PHONE_EXT;
 	}
 
 	/**
-	 * setALTOFFICEPHONEEXIT($alt_office_phone_exit)
+	 * setALTOFFICEPHONEEXT($alt_office_phone_ext)
 	 *
-	 * @param char(15) $ALT_OFFICE_PHONE_EXIT
+	 * @param char(15) $ALT_OFFICE_PHONE_EXT
 	 */
-	public function setALTOFFICEPHONEEXIT($alt_office_phone_exit) {
-		$this->ALT_OFFICE_PHONE_EXIT = $alt_office_phone_exit;
+	public function setALTOFFICEPHONEEXT($alt_office_phone_ext) {
+		$this->ALT_OFFICE_PHONE_EXT = $alt_office_phone_ext;
 	}
 
 	/**
@@ -95,7 +114,7 @@ class OIRAPExpert extends Entity {
 	/**
 	 * getHPHONEDISPLAYIND()
 	 *
-	 * @return tinyint(1) $HPHONE_DISPLAY_IND
+	 * @return char(3) $HPHONE_DISPLAY_IND
 	 */
 	public function getHPHONEDISPLAYIND() {
 		return $this->HPHONE_DISPLAY_IND;
@@ -104,7 +123,7 @@ class OIRAPExpert extends Entity {
 	/**
 	 * setHPHONEDISPLAYIND($hphone_display_ind)
 	 *
-	 * @param tinyint(1) $HPHONE_DISPLAY_IND
+	 * @param char(3) $HPHONE_DISPLAY_IND
 	 */
 	public function setHPHONEDISPLAYIND($hphone_display_ind) {
 		$this->HPHONE_DISPLAY_IND = $hphone_display_ind;
@@ -183,39 +202,39 @@ class OIRAPExpert extends Entity {
 	}
 
 	/**
-	 * getMEDIAREDIRECTCONTACTIND()
+	 * getMEDIADIRECTCONTACTIND()
 	 *
-	 * @return tinyint(1) $MEDIA_REDIRECT_CONTACT_IND
+	 * @return char(3) $MEDIA_DIRECT_CONTACT_IND
 	 */
-	public function getMEDIAREDIRECTCONTACTIND() {
-		return $this->MEDIA_REDIRECT_CONTACT_IND;
+	public function getMEDIADIRECTCONTACTIND() {
+		return $this->MEDIA_DIRECT_CONTACT_IND;
 	}
 
 	/**
-	 * setMEDIAREDIRECTCONTACTIND($media_redirect_contact_ind)
+	 * setMEDIADIRECTCONTACTIND($media_direct_contact_ind)
 	 *
-	 * @param tinyint(1) $MEDIA_REDIRECT_CONTACT_IND
+	 * @param char(3) $MEDIA_DIRECT_CONTACT_IND
 	 */
-	public function setMEDIAREDIRECTCONTACTIND($media_redirect_contact_ind) {
-		$this->MEDIA_REDIRECT_CONTACT_IND = $media_redirect_contact_ind;
+	public function setMEDIADIRECTCONTACTIND($media_direct_contact_ind) {
+		$this->MEDIA_DIRECT_CONTACT_IND = $media_direct_contact_ind;
 	}
 
 	/**
-	 * getBIO()
+	 * getEXPERTBIO()
 	 *
-	 * @return text $BIO
+	 * @return text $EXPERT_BIO
 	 */
-	public function getBIO() {
-		return $this->BIO;
+	public function getEXPERTBIO() {
+		return $this->EXPERT_BIO;
 	}
 
 	/**
-	 * setBIO($bio)
+	 * setEXPERTBIO($expert_bio)
 	 *
-	 * @param text $BIO
+	 * @param text $EXPERT_BIO
 	 */
-	public function setBIO($bio) {
-		$this->BIO = $bio;
+	public function setEXPERTBIO($expert_bio) {
+		$this->EXPERT_BIO = $expert_bio;
 	}
 
 	/**
@@ -237,6 +256,28 @@ class OIRAPExpert extends Entity {
 	}
 
 	/**
+	 * getLASTMODIFIED()
+	 *
+	 * @return timestamp $LASTMODIFIED
+	 */
+	public function getLASTMODIFIED() {
+		return $this->LASTMODIFIED;
+	}
+
+	/**
+	 * setLASTMODIFIED($lastmodified)
+	 *
+	 * @param timestamp $LASTMODIFIED
+	 */
+	public function setLASTMODIFIED($lastmodified) {
+		$this->LASTMODIFIED = $lastmodified;
+	}
+
+	public static function getTableFilds() {
+		return Entity::getTableFilds(self::$DB_TABLE_NAME);
+	}
+	
+	/**
 	 * @param $params - Ways to filter the query
 	 */
 	public static function load($params) {
@@ -247,5 +288,4 @@ class OIRAPExpert extends Entity {
 		}
 		return false;
 	}
-
 } // end class OIRAPExpert

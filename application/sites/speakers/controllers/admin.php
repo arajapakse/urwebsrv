@@ -34,7 +34,12 @@ class Admin extends MX_Controller {
 	//	$os = new OIRAPExpert();
 		//	$os->setIId(100);
 		//$os->insert();
-		$os = OIRAPExpert::load(100);
+		
+		Modules::library('entities/OIRAPExpert');
+		//$os = OIRAPExpert::load(100);
+		echo 'expert'; exit;
+		echo 'what';
+		exit;
 		print_r($os->getData());
 	}
 

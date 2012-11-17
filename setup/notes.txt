@@ -1,0 +1,18 @@
+All,
+
+
+* A way for updates to the Faculty Survey to automatically update the Speakers/Experts databases, if not already in place (for example, when someone's job title changes; 
+Faculty Survey currently gets those updates automatically from UHR).
+
+
+* When a speaker or expert's entry is modified from outside the admin interface (say, when the Faculty Survey info updates the Speakers/Experts databases), that person's entry should be flagged somehow. Right now, there are only three states for someone: new, active, and inactive. There would need to be a fourth state, perhaps called "updated."
+If this fourth state is possible, they'd like to receive an email notification that the content has been modified.
+It would be nice if the admin interface showed the admin when the speaker or expert's entry was last modified.
+It is not currently easy to find who the new entries are, because you have to scroll through every person and see who has a red plus sign. (All states are expressed graphically, not textually.) There were two suggestions:
+Be able to sort the entries by their state, or
+Have the indicators of these states not just be images, but text as well. That way, the admin could at least do a Ctrl+F and search for "new" or "inactive," rather than have to look at every person on the page and see their state graphic.
+For people who are pulled in from the Faculty Survey database, it would be nice if the portrait images that were added via Faculty Survey automatically could be referenced from Speakers and Experts.
+Karen isn't sure if she's getting emails every time someone is added to the Experts site. They're not sure if it's an actually a problem or it's that almost no one is signing up.
+A nicety, not actually important: it'd be nice to see a tally of how many times a speaker or expert has been requested through the system. It would give an opportunity to find ways to help promote or revise people who seem to be getting ignored by people using the site.
+
+There were also a few quick, easy CSS suggestions that she could implement.  I don't have a list of those at the moment, but I can try to get them from her.

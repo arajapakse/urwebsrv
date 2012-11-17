@@ -1,5 +1,4 @@
 <?php 
-
 class OIRAPSurvey extends Entity {
 	private static $DB_TABLE_NAME = 'OIRAPSurveys';
 	
@@ -10,7 +9,7 @@ class OIRAPSurvey extends Entity {
 	}
 	
 	/**
-	 * getIId() 
+	 * getIId()
 	 * Primary Key
 	 *
 	 * @return char(16) $I_ID
@@ -20,7 +19,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setIId($i_id) 
+	 * setIId($i_id)
 	 * Primary Key
 	 *
 	 * @param char(16) $I_ID
@@ -32,14 +31,14 @@ class OIRAPSurvey extends Entity {
 	public function iidExists() {
 		$id = $this->I_ID;
 	
-		if (!empty($id) && is_numeric($id)) {
+		if (!empty($id)) {
 			return true;
 		}
 		return false;
 	}
-		
+	
 	/**
-	 * getEMPLOYEEId() 
+	 * getEMPLOYEEId()
 	 *
 	 * @return bigint(20) $EMPLOYEE_ID
 	 */
@@ -48,7 +47,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setEMPLOYEEId($employee_id) 
+	 * setEMPLOYEEId($employee_id)
 	 *
 	 * @param bigint(20) $EMPLOYEE_ID
 	 */
@@ -57,7 +56,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getFIRSTNM() 
+	 * getFIRSTNM()
 	 *
 	 * @return varchar(255) $FIRST_NM
 	 */
@@ -66,7 +65,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setFIRSTNM($first_nm) 
+	 * setFIRSTNM($first_nm)
 	 *
 	 * @param varchar(255) $FIRST_NM
 	 */
@@ -75,7 +74,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getMIDDLENM() 
+	 * getMIDDLENM()
 	 *
 	 * @return varchar(255) $MIDDLE_NM
 	 */
@@ -84,7 +83,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setMIDDLENM($middle_nm) 
+	 * setMIDDLENM($middle_nm)
 	 *
 	 * @param varchar(255) $MIDDLE_NM
 	 */
@@ -93,7 +92,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getLASTNM() 
+	 * getLASTNM()
 	 *
 	 * @return varchar(255) $LAST_NM
 	 */
@@ -102,7 +101,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setLASTNM($last_nm) 
+	 * setLASTNM($last_nm)
 	 *
 	 * @param varchar(255) $LAST_NM
 	 */
@@ -111,7 +110,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getTITLEDESCR() 
+	 * getTITLEDESCR()
 	 *
 	 * @return varchar(255) $TITLE_DESCR
 	 */
@@ -120,7 +119,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setTITLEDESCR($title_descr) 
+	 * setTITLEDESCR($title_descr)
 	 *
 	 * @param varchar(255) $TITLE_DESCR
 	 */
@@ -129,7 +128,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getEMAILADDR() 
+	 * getEMAILADDR()
 	 *
 	 * @return varchar(255) $EMAIL_ADDR
 	 */
@@ -138,7 +137,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setEMAILADDR($email_addr) 
+	 * setEMAILADDR($email_addr)
 	 *
 	 * @param varchar(255) $EMAIL_ADDR
 	 */
@@ -147,7 +146,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getHOMEPAGEURL() 
+	 * getHOMEPAGEURL()
 	 *
 	 * @return varchar(255) $HOMEPAGE_URL
 	 */
@@ -156,7 +155,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setHOMEPAGEURL($homepage_url) 
+	 * setHOMEPAGEURL($homepage_url)
 	 *
 	 * @param varchar(255) $HOMEPAGE_URL
 	 */
@@ -165,7 +164,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getPHOTOURL() 
+	 * getPHOTOURL()
 	 *
 	 * @return varchar(255) $PHOTO_URL
 	 */
@@ -174,7 +173,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPHOTOURL($photo_url) 
+	 * setPHOTOURL($photo_url)
 	 *
 	 * @param varchar(255) $PHOTO_URL
 	 */
@@ -183,25 +182,25 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getCAMPUSCODE() 
+	 * getCAMPUSCODE()
 	 *
-	 * @return varchar(255) $CAMPUS_CODE
+	 * @return char(5) $CAMPUS_CODE
 	 */
 	public function getCAMPUSCODE() {
 		return $this->CAMPUS_CODE;
 	}
 
 	/**
-	 * setCAMPUSCODE($campus_code) 
+	 * setCAMPUSCODE($campus_code)
 	 *
-	 * @param varchar(255) $CAMPUS_CODE
+	 * @param char(5) $CAMPUS_CODE
 	 */
 	public function setCAMPUSCODE($campus_code) {
 		$this->CAMPUS_CODE = $campus_code;
 	}
 
 	/**
-	 * getCAMPUSDESCR() 
+	 * getCAMPUSDESCR()
 	 *
 	 * @return varchar(255) $CAMPUS_DESCR
 	 */
@@ -210,7 +209,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setCAMPUSDESCR($campus_descr) 
+	 * setCAMPUSDESCR($campus_descr)
 	 *
 	 * @param varchar(255) $CAMPUS_DESCR
 	 */
@@ -219,61 +218,61 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getDIVISIONCODE() 
+	 * getDIVISIONCODE()
 	 *
-	 * @return varchar(20) $DIVISION_CODE
+	 * @return char(5) $DIVISION_CODE
 	 */
 	public function getDIVISIONCODE() {
 		return $this->DIVISION_CODE;
 	}
 
 	/**
-	 * setDIVISIONCODE($division_code) 
+	 * setDIVISIONCODE($division_code)
 	 *
-	 * @param varchar(20) $DIVISION_CODE
+	 * @param char(5) $DIVISION_CODE
 	 */
 	public function setDIVISIONCODE($division_code) {
 		$this->DIVISION_CODE = $division_code;
 	}
 
 	/**
-	 * getDIVISIONDESCR() 
+	 * getDIVISIONDESCR()
 	 *
-	 * @return varchar(255) $DIVISION_DESCR
+	 * @return varchar(32) $DIVISION_DESCR
 	 */
 	public function getDIVISIONDESCR() {
 		return $this->DIVISION_DESCR;
 	}
 
 	/**
-	 * setDIVISIONDESCR($division_descr) 
+	 * setDIVISIONDESCR($division_descr)
 	 *
-	 * @param varchar(255) $DIVISION_DESCR
+	 * @param varchar(32) $DIVISION_DESCR
 	 */
 	public function setDIVISIONDESCR($division_descr) {
 		$this->DIVISION_DESCR = $division_descr;
 	}
 
 	/**
-	 * getDEPTCODE() 
+	 * getDEPTCODE()
 	 *
-	 * @return varchar(20) $DEPT_CODE
+	 * @return char(5) $DEPT_CODE
 	 */
 	public function getDEPTCODE() {
 		return $this->DEPT_CODE;
 	}
 
 	/**
-	 * setDEPTCODE($dept_code) 
+	 * setDEPTCODE($dept_code)
 	 *
-	 * @param varchar(20) $DEPT_CODE
+	 * @param char(5) $DEPT_CODE
 	 */
 	public function setDEPTCODE($dept_code) {
 		$this->DEPT_CODE = $dept_code;
 	}
 
 	/**
-	 * getDEPTDESCR() 
+	 * getDEPTDESCR()
 	 *
 	 * @return varchar(255) $DEPT_DESCR
 	 */
@@ -282,7 +281,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setDEPTDESCR($dept_descr) 
+	 * setDEPTDESCR($dept_descr)
 	 *
 	 * @param varchar(255) $DEPT_DESCR
 	 */
@@ -291,7 +290,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getREPORTINGRELCODE() 
+	 * getREPORTINGRELCODE()
 	 *
 	 * @return varchar(20) $REPORTING_REL_CODE
 	 */
@@ -300,7 +299,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setREPORTINGRELCODE($reporting_rel_code) 
+	 * setREPORTINGRELCODE($reporting_rel_code)
 	 *
 	 * @param varchar(20) $REPORTING_REL_CODE
 	 */
@@ -309,7 +308,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getREPORTINGRELDESCR() 
+	 * getREPORTINGRELDESCR()
 	 *
 	 * @return varchar(255) $REPORTING_REL_DESCR
 	 */
@@ -318,7 +317,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setREPORTINGRELDESCR($reporting_rel_descr) 
+	 * setREPORTINGRELDESCR($reporting_rel_descr)
 	 *
 	 * @param varchar(255) $REPORTING_REL_DESCR
 	 */
@@ -327,7 +326,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getADDR1() 
+	 * getADDR1()
 	 *
 	 * @return varchar(255) $ADDR_1
 	 */
@@ -336,7 +335,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setADDR1($addr_1) 
+	 * setADDR1($addr_1)
 	 *
 	 * @param varchar(255) $ADDR_1
 	 */
@@ -345,7 +344,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getADDR2() 
+	 * getADDR2()
 	 *
 	 * @return varchar(255) $ADDR_2
 	 */
@@ -354,7 +353,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setADDR2($addr_2) 
+	 * setADDR2($addr_2)
 	 *
 	 * @param varchar(255) $ADDR_2
 	 */
@@ -363,7 +362,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getCITY() 
+	 * getCITY()
 	 *
 	 * @return varchar(255) $CITY
 	 */
@@ -372,7 +371,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setCITY($city) 
+	 * setCITY($city)
 	 *
 	 * @param varchar(255) $CITY
 	 */
@@ -381,7 +380,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getSTATE() 
+	 * getSTATE()
 	 *
 	 * @return varchar(5) $STATE
 	 */
@@ -390,7 +389,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setSTATE($state) 
+	 * setSTATE($state)
 	 *
 	 * @param varchar(5) $STATE
 	 */
@@ -399,7 +398,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getZIP() 
+	 * getZIP()
 	 *
 	 * @return varchar(10) $ZIP
 	 */
@@ -408,7 +407,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setZIP($zip) 
+	 * setZIP($zip)
 	 *
 	 * @param varchar(10) $ZIP
 	 */
@@ -417,7 +416,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getPHONE() 
+	 * getPHONE()
 	 *
 	 * @return varchar(20) $PHONE
 	 */
@@ -426,7 +425,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPHONE($phone) 
+	 * setPHONE($phone)
 	 *
 	 * @param varchar(20) $PHONE
 	 */
@@ -435,7 +434,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getPHONEEXT() 
+	 * getPHONEEXT()
 	 *
 	 * @return varchar(20) $PHONE_EXT
 	 */
@@ -444,7 +443,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPHONEEXT($phone_ext) 
+	 * setPHONEEXT($phone_ext)
 	 *
 	 * @param varchar(20) $PHONE_EXT
 	 */
@@ -453,7 +452,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getFAX() 
+	 * getFAX()
 	 *
 	 * @return varchar(20) $FAX
 	 */
@@ -462,7 +461,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setFAX($fax) 
+	 * setFAX($fax)
 	 *
 	 * @param varchar(20) $FAX
 	 */
@@ -471,25 +470,25 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getCOSIND() 
+	 * getCOSIND()
 	 *
-	 * @return tinyint(1) $COS_IND
+	 * @return char(3) $COS_IND
 	 */
 	public function getCOSIND() {
 		return $this->COS_IND;
 	}
 
 	/**
-	 * setCOSIND($cos_ind) 
+	 * setCOSIND($cos_ind)
 	 *
-	 * @param tinyint(1) $COS_IND
+	 * @param char(3) $COS_IND
 	 */
 	public function setCOSIND($cos_ind) {
 		$this->COS_IND = $cos_ind;
 	}
 
 	/**
-	 * getCOSTRANSDT() 
+	 * getCOSTRANSDT()
 	 *
 	 * @return varchar(30) $COS_TRANS_DT
 	 */
@@ -498,7 +497,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setCOSTRANSDT($cos_trans_dt) 
+	 * setCOSTRANSDT($cos_trans_dt)
 	 *
 	 * @param varchar(30) $COS_TRANS_DT
 	 */
@@ -507,79 +506,79 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getISPROFILEPRIVATEFLAG() 
+	 * getISPROFILEPRIVATEFLAG()
 	 *
-	 * @return tinyint(1) $IS_PROFILE_PRIVATE_FLAG
+	 * @return char(3) $IS_PROFILE_PRIVATE_FLAG
 	 */
 	public function getISPROFILEPRIVATEFLAG() {
 		return $this->IS_PROFILE_PRIVATE_FLAG;
 	}
 
 	/**
-	 * setISPROFILEPRIVATEFLAG($is_profile_private_flag) 
+	 * setISPROFILEPRIVATEFLAG($is_profile_private_flag)
 	 *
-	 * @param tinyint(1) $IS_PROFILE_PRIVATE_FLAG
+	 * @param char(3) $IS_PROFILE_PRIVATE_FLAG
 	 */
 	public function setISPROFILEPRIVATEFLAG($is_profile_private_flag) {
 		$this->IS_PROFILE_PRIVATE_FLAG = $is_profile_private_flag;
 	}
 
 	/**
-	 * getISRESUMEPRIVATEFLAG() 
+	 * getISRESUMEPRIVATEFLAG()
 	 *
-	 * @return tinyint(1) $IS_RESUME_PRIVATE_FLAG
+	 * @return char(3) $IS_RESUME_PRIVATE_FLAG
 	 */
 	public function getISRESUMEPRIVATEFLAG() {
 		return $this->IS_RESUME_PRIVATE_FLAG;
 	}
 
 	/**
-	 * setISRESUMEPRIVATEFLAG($is_resume_private_flag) 
+	 * setISRESUMEPRIVATEFLAG($is_resume_private_flag)
 	 *
-	 * @param tinyint(1) $IS_RESUME_PRIVATE_FLAG
+	 * @param char(3) $IS_RESUME_PRIVATE_FLAG
 	 */
 	public function setISRESUMEPRIVATEFLAG($is_resume_private_flag) {
 		$this->IS_RESUME_PRIVATE_FLAG = $is_resume_private_flag;
 	}
 
 	/**
-	 * getISADMINFLAG() 
+	 * getISADMINFLAG()
 	 *
-	 * @return tinyint(1) $IS_ADMIN_FLAG
+	 * @return char(3) $IS_ADMIN_FLAG
 	 */
 	public function getISADMINFLAG() {
 		return $this->IS_ADMIN_FLAG;
 	}
 
 	/**
-	 * setISADMINFLAG($is_admin_flag) 
+	 * setISADMINFLAG($is_admin_flag)
 	 *
-	 * @param tinyint(1) $IS_ADMIN_FLAG
+	 * @param char(3) $IS_ADMIN_FLAG
 	 */
 	public function setISADMINFLAG($is_admin_flag) {
 		$this->IS_ADMIN_FLAG = $is_admin_flag;
 	}
 
 	/**
-	 * getISUSINGFACSURV() 
+	 * getISUSINGFACSURV()
 	 *
-	 * @return tinyint(1) $IS_USING_FACSURV
+	 * @return char(3) $IS_USING_FACSURV
 	 */
 	public function getISUSINGFACSURV() {
 		return $this->IS_USING_FACSURV;
 	}
 
 	/**
-	 * setISUSINGFACSURV($is_using_facsurv) 
+	 * setISUSINGFACSURV($is_using_facsurv)
 	 *
-	 * @param tinyint(1) $IS_USING_FACSURV
+	 * @param char(3) $IS_USING_FACSURV
 	 */
 	public function setISUSINGFACSURV($is_using_facsurv) {
 		$this->IS_USING_FACSURV = $is_using_facsurv;
 	}
 
 	/**
-	 * getPHONE2() 
+	 * getPHONE2()
 	 *
 	 * @return varchar(20) $PHONE2
 	 */
@@ -588,7 +587,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPHONE2($phone2) 
+	 * setPHONE2($phone2)
 	 *
 	 * @param varchar(20) $PHONE2
 	 */
@@ -597,7 +596,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getPHONE2EXT() 
+	 * getPHONE2EXT()
 	 *
 	 * @return varchar(15) $PHONE2_EXT
 	 */
@@ -606,7 +605,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPHONE2EXT($phone2_ext) 
+	 * setPHONE2EXT($phone2_ext)
 	 *
 	 * @param varchar(15) $PHONE2_EXT
 	 */
@@ -615,7 +614,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getJOBBEGINDATE() 
+	 * getJOBBEGINDATE()
 	 *
 	 * @return varchar(20) $JOB_BEGIN_DATE
 	 */
@@ -624,7 +623,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setJOBBEGINDATE($job_begin_date) 
+	 * setJOBBEGINDATE($job_begin_date)
 	 *
 	 * @param varchar(20) $JOB_BEGIN_DATE
 	 */
@@ -633,7 +632,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getJOBCLASS() 
+	 * getJOBCLASS()
 	 *
 	 * @return varchar(15) $JOB_CLASS
 	 */
@@ -642,7 +641,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setJOBCLASS($job_class) 
+	 * setJOBCLASS($job_class)
 	 *
 	 * @param varchar(15) $JOB_CLASS
 	 */
@@ -651,43 +650,43 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getSOURCEFLAG() 
+	 * getSOURCEFLAG()
 	 *
-	 * @return tinyint(1) $SOURCE_FLAG
+	 * @return char(3) $SOURCE_FLAG
 	 */
 	public function getSOURCEFLAG() {
 		return $this->SOURCE_FLAG;
 	}
 
 	/**
-	 * setSOURCEFLAG($source_flag) 
+	 * setSOURCEFLAG($source_flag)
 	 *
-	 * @param tinyint(1) $SOURCE_FLAG
+	 * @param char(3) $SOURCE_FLAG
 	 */
 	public function setSOURCEFLAG($source_flag) {
 		$this->SOURCE_FLAG = $source_flag;
 	}
 
 	/**
-	 * getUPDATENAME() 
+	 * getUPDATENAME()
 	 *
-	 * @return tinyint(1) $UPDATE_NAME
+	 * @return char(3) $UPDATE_NAME
 	 */
 	public function getUPDATENAME() {
 		return $this->UPDATE_NAME;
 	}
 
 	/**
-	 * setUPDATENAME($update_name) 
+	 * setUPDATENAME($update_name)
 	 *
-	 * @param tinyint(1) $UPDATE_NAME
+	 * @param char(3) $UPDATE_NAME
 	 */
 	public function setUPDATENAME($update_name) {
 		$this->UPDATE_NAME = $update_name;
 	}
 
 	/**
-	 * getEMPLOYMENTSTATUSCODE() 
+	 * getEMPLOYMENTSTATUSCODE()
 	 *
 	 * @return varchar(5) $EMPLOYMENT_STATUS_CODE
 	 */
@@ -696,7 +695,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setEMPLOYMENTSTATUSCODE($employment_status_code) 
+	 * setEMPLOYMENTSTATUSCODE($employment_status_code)
 	 *
 	 * @param varchar(5) $EMPLOYMENT_STATUS_CODE
 	 */
@@ -705,7 +704,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getTENUREDATE() 
+	 * getTENUREDATE()
 	 *
 	 * @return varchar(20) $TENURE_DATE
 	 */
@@ -714,7 +713,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setTENUREDATE($tenure_date) 
+	 * setTENUREDATE($tenure_date)
 	 *
 	 * @param varchar(20) $TENURE_DATE
 	 */
@@ -723,7 +722,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getRANKCODE() 
+	 * getRANKCODE()
 	 *
 	 * @return char(10) $RANK_CODE
 	 */
@@ -732,7 +731,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setRANKCODE($rank_code) 
+	 * setRANKCODE($rank_code)
 	 *
 	 * @param char(10) $RANK_CODE
 	 */
@@ -741,7 +740,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getEMPLOYEETYPECODE() 
+	 * getEMPLOYEETYPECODE()
 	 *
 	 * @return char(8) $EMPLOYEE_TYPE_CODE
 	 */
@@ -750,7 +749,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setEMPLOYEETYPECODE($employee_type_code) 
+	 * setEMPLOYEETYPECODE($employee_type_code)
 	 *
 	 * @param char(8) $EMPLOYEE_TYPE_CODE
 	 */
@@ -759,7 +758,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getPPROFILE() 
+	 * getPPROFILE()
 	 *
 	 * @return char(10) $PPROFILE
 	 */
@@ -768,7 +767,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setPPROFILE($pprofile) 
+	 * setPPROFILE($pprofile)
 	 *
 	 * @param char(10) $PPROFILE
 	 */
@@ -777,25 +776,25 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getISINACTIVE() 
+	 * getISINACTIVE()
 	 *
-	 * @return tinyint(1) $ISINACTIVE
+	 * @return char(3) $ISINACTIVE
 	 */
 	public function getISINACTIVE() {
 		return $this->ISINACTIVE;
 	}
 
 	/**
-	 * setISINACTIVE($isinactive) 
+	 * setISINACTIVE($isinactive)
 	 *
-	 * @param tinyint(1) $ISINACTIVE
+	 * @param char(3) $ISINACTIVE
 	 */
 	public function setISINACTIVE($isinactive) {
 		$this->ISINACTIVE = $isinactive;
 	}
 
 	/**
-	 * getSURVEYDATA() 
+	 * getSURVEYDATA()
 	 *
 	 * @return text $SURVEYDATA
 	 */
@@ -804,7 +803,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setSURVEYDATA($surveydata) 
+	 * setSURVEYDATA($surveydata)
 	 *
 	 * @param text $SURVEYDATA
 	 */
@@ -813,25 +812,25 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * getLASTMODIFIED() 
+	 * getLASTMODIFIED()
 	 *
-	 * @return datetime $LASTMODIFIED
+	 * @return timestamp $LASTMODIFIED
 	 */
 	public function getLASTMODIFIED() {
 		return $this->LASTMODIFIED;
 	}
 
 	/**
-	 * setLASTMODIFIED($lastmodified) 
+	 * setLASTMODIFIED($lastmodified)
 	 *
-	 * @param datetime $LASTMODIFIED
+	 * @param timestamp $LASTMODIFIED
 	 */
 	public function setLASTMODIFIED($lastmodified) {
 		$this->LASTMODIFIED = $lastmodified;
 	}
 
 	/**
-	 * getDATECREATED() 
+	 * getDATECREATED()
 	 *
 	 * @return datetime $DATECREATED
 	 */
@@ -840,7 +839,7 @@ class OIRAPSurvey extends Entity {
 	}
 
 	/**
-	 * setDATECREATED($datecreated) 
+	 * setDATECREATED($datecreated)
 	 *
 	 * @param datetime $DATECREATED
 	 */
@@ -848,6 +847,10 @@ class OIRAPSurvey extends Entity {
 		$this->DATECREATED = $datecreated;
 	}
 
+	public static function getTableFilds() {
+		return Entity::getTableFilds(self::$DB_TABLE_NAME);
+	}
+	
 	/**
 	 * @param $params - Ways to filter the query
 	 */
@@ -857,9 +860,7 @@ class OIRAPSurvey extends Entity {
 		if ($obj->iidExists()) {
 			return $obj;
 		}
+	
 		return false;
 	}
-	
 } // end class OIRAPSurvey
-
-

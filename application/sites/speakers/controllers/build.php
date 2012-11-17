@@ -10,8 +10,8 @@ class Build extends MX_Controller {
 
 	private $tables = array(
 			//'OIRAPSurveys' => 'OIRAPSurvey',
-			'OIRAPSpeakers' => 'OIRAPSpeaker',
-			//'OIRAPExperts' => 'OIRAPExpert'
+			//'OIRAPSpeakers' => 'OIRAPSpeaker',
+			'OIRAPExperts' => 'OIRAPExpert'
 	);
 
 
